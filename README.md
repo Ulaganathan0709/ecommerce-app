@@ -26,7 +26,7 @@ This project is a shopping cart application built using React and Redux Toolkit.
 - **React Router**: For navigation between pages.
 - **CSS**: Basic styling for the components.
 
-1. **Netlify URL**: After deploying your project on Netlify, replace `https://your-netlify-url.netlify.app` with the actual URL provided by Netlify.
+1. **Netlify URL**: After deploying your project on Netlify, replace `https://ecommerceappusk.netlify.app/` with the actual URL provided by Netlify.
 
 2. **Contribution Guidelines**: The steps provided in the "Contribution" section are standard for most open-source projects on GitHub. Update it with any specific guidelines you may have.
 
@@ -41,4 +41,4 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Ulaganathan0709?tab=repositories

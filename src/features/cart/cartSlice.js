@@ -1,15 +1,23 @@
-import { createSlice } from '@reduxjs/toolkit';
-import productsData from '../../data/products.json'; // Ensure correct path
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-// Extract the products array from productsData
-const products = productsData.products;
+// Thunk to fetch products
+export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
+  const response = await fetch('/products.json'); // Correct path for fetching from the public directory
+  if (!response.ok) {
+    throw new Error('Failed to fetch products');
+  }
+  const data = await response.json();
+  return data.products;
+});
 
 const initialState = {
   items: [], // Cart items will be stored here
+  products: [], // Available products
   subtotal: 0,
   discount: 0,
   total: 0,
   discountCode: '', // Store applied discount code
+  status: 'idle', // Status of product fetching
 };
 
 const cartSlice = createSlice({
@@ -17,10 +25,15 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart: (state, action) => {
-      const product = products.find(item => item.id === action.payload.id);
+      if (state.products.length === 0) {
+        throw new Error('Products have not been loaded yet.');
+      }
+
+      const product = state.products.find(item => item.id === action.payload.id);
       if (!product) {
         throw new Error('Product not found in data.');
       }
+
       const cartItem = state.items.find(item => item.id === product.id);
       if (cartItem) {
         if (cartItem.quantity < product.stock) {
@@ -48,7 +61,7 @@ const cartSlice = createSlice({
     increaseQuantity: (state, action) => {
       const cartItem = state.items.find(item => item.id === action.payload);
       if (cartItem) {
-        const product = products.find(item => item.id === cartItem.id);
+        const product = state.products.find(item => item.id === cartItem.id);
         if (cartItem.quantity < product.stock) {
           cartItem.quantity += 1;
           state.subtotal += cartItem.price;
@@ -82,6 +95,19 @@ const cartSlice = createSlice({
       state.subtotal = state.items.reduce((acc, item) => acc + item.price * item.quantity, 0);
       state.total = state.subtotal - state.discount;
     },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchProducts.pending, (state) => {
+        state.status = 'loading';
+      })
+      .addCase(fetchProducts.fulfilled, (state, action) => {
+        state.products = action.payload;
+        state.status = 'succeeded';
+      })
+      .addCase(fetchProducts.rejected, (state) => {
+        state.status = 'failed';
+      });
   },
 });
 
