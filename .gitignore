@@ -50,6 +50,3 @@ coverage
 
 # MacOS system files
 .DS_Store
-
-# Netlify specific files
-.netlify/
