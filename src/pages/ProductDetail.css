@@ -1,0 +1,37 @@
+.product-detail {
+    padding: 20px;
+    background-color: #1e1e2f; /* Match the overall background color */
+    color: #ffffff; /* Ensure text is readable */
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .product-detail h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-detail img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .product-detail p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .product-detail .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .product-detail .discount {
+    font-size: 1rem;
+    color: #ff6347;
+  }
+  

@@ -1,0 +1,96 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Apple iPhone 15 (128 GB) - Black",
+            "description": "An apple mobile which is nothing like apple",
+            "price": 549,
+            "discountPercentage": 12.96,
+            "rating": 4.69,
+            "stock": 94,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://m.media-amazon.com/images/I/71657TiFeHL._SL1500_.jpg",
+            "images": [
+                "https://m.media-amazon.com/images/I/51brdXeugJL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/712CBkmhLhL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/61f4dTush1L._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81BnjSLm2oL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71657TiFeHL._SL1500_.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Apple iPhone 12 (64GB) - Blue",
+            "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+            "price": 899,
+            "discountPercentage": 17.94,
+            "rating": 4.44,
+            "stock": 34,
+            "brand": "Apple",
+            "category": "smartphones",
+            "thumbnail": "https://m.media-amazon.com/images/I/71ZOtNdaZCL._SL1500_.jpg",
+            "images": [
+                "https://m.media-amazon.com/images/I/81hB-X3SMtL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71dKRQE+dAL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81mrpbPBRwS._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71ZOtNdaZCL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71+tlCn1oXL._SL1500_.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Samsung Galaxy M35 5G",
+            "description": "Samsung's new variant which goes beyond Galaxy to the Universe Moonlight Blue,6GB RAM,128GB Storage",
+            "price": 1249,
+            "discountPercentage": 15.46,
+            "rating": 4.09,
+            "stock": 36,
+            "brand": "Samsung",
+            "category": "smartphones",
+            "thumbnail": "https://m.media-amazon.com/images/I/81K450cOJML._SX679_.jpg",
+            "images": [
+                "https://m.media-amazon.com/images/I/81K450cOJML._SX679_.jpg",
+                "https://m.media-amazon.com/images/I/91O1OmjpEjL._SX679_.jpg",
+                "https://m.media-amazon.com/images/I/810KlYwBwOL._SX679_.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "OPPO F19 Pro+ 5G",
+            "description": "OPPO F19 Pro+ 5G Space Silver, 8GB RAM, 128GB Storage.",
+            "price": 280,
+            "discountPercentage": 17.91,
+            "rating": 4.3,
+            "stock": 123,
+            "brand": "OPPO",
+            "category": "smartphones",
+            "thumbnail": "https://m.media-amazon.com/images/I/51UxswhNeZL._SL1000_.jpg",
+            "images": [
+                "https://m.media-amazon.com/images/I/71SR5T-hPKL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71YolWx6IWL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71SOABJA4AL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/716uhH5-DHL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/51UxswhNeZL._SL1000_.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "HONOR X9b 5G",
+            "description": "HONOR X9b 5G (Sunrise Orange, 8GB + 256GB) | India's First Ultra-Bounce Anti-Drop Curved AMOLED Display | 5800mAh Battery | 108MP Primary Camera | without Charger",
+            "price": 499,
+            "discountPercentage": 10.58,
+            "rating": 4.09,
+            "stock": 32,
+            "brand": "Huawei",
+            "category": "smartphones",
+            "thumbnail": "https://m.media-amazon.com/images/I/81iFOkV76DL._SL1500_.jpg",
+            "images": [
+                "https://m.media-amazon.com/images/I/71P5zudqCuL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71WIbUiqthL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/71Mo2bCkImL._SL1500_.jpg",
+                "https://m.media-amazon.com/images/I/81iFOkV76DL._SL1500_.jpg"
+            ]
+        }
+    ]
+}

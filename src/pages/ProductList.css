@@ -1,0 +1,149 @@
+.product-list {
+  padding: 20px;
+  background-color: #1e1e2f; /* Match the overall background color */
+  color: #ffffff; /* Ensure text is readable */
+}
+
+.product-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #282845; /* Card background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.25rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.product-card .price {
+  font-size: 1.2em;
+  color: #e94560;
+  font-weight: bold;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.stars .star {
+  width: 20px;
+  height: 20px;
+}
+
+.product-card button {
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.product-card button:hover {
+  background: #0056b3;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.prev, .next {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 3rem; /* Increased size for better visibility */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev::before, .next::before {
+  content: '';
+  display: inline-block;
+  border-top: 1.5rem solid transparent;
+  border-bottom: 1.5rem solid transparent;
+}
+
+.prev::before {
+  border-right: 1.5rem solid #929090;
+}
+
+.next::before {
+  border-left: 1.5rem solid #929090;
+}
+
+.highlighted-price {
+  color: #ffcc00; /* Highlighted color */
+  font-weight: bold;
+}

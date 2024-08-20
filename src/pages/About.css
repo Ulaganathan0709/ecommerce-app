@@ -1,0 +1,15 @@
+.about-page {
+  background-color: #0f3460;
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.about-page h1 {
+  color: #f0f0f0;
+}
+
+.about-page p {
+  color: #e0e0e0;
+}

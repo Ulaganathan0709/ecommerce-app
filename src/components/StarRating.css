@@ -1,0 +1,12 @@
+.stars {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .star {
+    color: #ffcc00;
+    font-size: 20px;
+    margin: 0 2px;
+  }
+  
